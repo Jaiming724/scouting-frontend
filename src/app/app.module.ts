@@ -6,7 +6,14 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatButtonModule} from "@angular/material/button";
+import {MatInputModule} from "@angular/material/input";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatIconModule} from "@angular/material/icon";
 
 import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
 import {AddTeamComponent} from './components/nav-items/add-team/add-team.component';
@@ -14,12 +21,7 @@ import {AddMatchComponent} from './components/nav-items/add-match/add-match.comp
 import {ViewTeamsComponent} from './components/nav-items/view-teams/view-teams.component';
 import {ViewMatchesComponent} from './components/nav-items/view-matches/view-matches.component';
 import {BodyComponent} from './components/body/body.component';
-import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatDatepickerModule} from "@angular/material/datepicker";
-import {MatButtonModule} from "@angular/material/button";
-import {MatInputModule} from "@angular/material/input";
-import {MatNativeDateModule} from "@angular/material/core";
-import {MatIconModule} from "@angular/material/icon";
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import {MatIconModule} from "@angular/material/icon";
     MatButtonModule,
     MatInputModule,
     MatNativeDateModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

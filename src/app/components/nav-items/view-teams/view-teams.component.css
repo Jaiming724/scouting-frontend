@@ -1,0 +1,10 @@
+.team-table {
+  width: 100%;
+}
+.column-name{
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  width: 33%;
+}
+
