@@ -4,13 +4,13 @@
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Team Name</mat-label>
-          <input matInput value="" [(ngModel)]="team.teamName">
+          <input matInput value="" [(ngModel)]="team.teamName" [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Team Number</mat-label>
-          <input matInput value="">
+          <input matInput value="" type="number" [(ngModel)]="team.teamNumber" [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
     </div>
@@ -18,13 +18,15 @@
       <div class="items col-lg-6 col-md-6">
         <mat-form-field appearance="standard">
           <mat-label>Freight Placed In Storage Unit</mat-label>
-          <input matInput value="">
+          <input matInput value="" type="number" [(ngModel)]="team.autoFreightPlacedInStorageUnit"
+                 [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
       <div class="items col-lg-6 col-md-6">
         <mat-form-field appearance="standard">
-          <mat-label>Freight Placed In Shipping Element</mat-label>
-          <input matInput value="">
+          <mat-label>Freight Placed In Shipping Hub</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="team.autoFreightPlacedOnShippingHub"
+                 [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
     </div>
@@ -32,7 +34,8 @@
       <div class="items col-lg-6 col-md-6 col-sm-6 col-6 ">
         <mat-form-field appearance="fill">
           <mat-label>Barcode Determination</mat-label>
-          <select matNativeControl required>
+          <select matNativeControl required [(ngModel)]="team.barcodeDetermination"
+                  [ngModelOptions]="{standalone: true}">
             <option value="NONE">NONE</option>
             <option value="USING_DUCK">USING DUCK</option>
             <option value="USING TEAM ELEMENT">USING TEAM ELEMENT</option>
@@ -42,7 +45,7 @@
       <div class="items col-lg-6 col-md-6 col-sm-6 col-6">
         <mat-form-field appearance="fill">
           <mat-label>Parking Type</mat-label>
-          <select matNativeControl required>
+          <select matNativeControl required [(ngModel)]="team.autoParkingType" [ngModelOptions]="{standalone: true}">
             <option value="NONE">NONE</option>
             <option value="PARKING_IN_STORAGE_UNIT_PARTIAL">Storage Unit Partial</option>
             <option value="PARKING_IN_STORAGE_UNIT_COMPLETELY">Storage Unit Completely</option>
@@ -56,7 +59,8 @@
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="fill">
           <mat-label>Shipping Hub Placement Level</mat-label>
-          <select matNativeControl required>
+          <select matNativeControl required [(ngModel)]="team.teleopShippingHubLevel"
+                  [ngModelOptions]="{standalone: true}">
             <option value="NONE">NONE</option>
             <option value="LEVEL_ONE">LEVEL ONE</option>
             <option value="LEVEL_TWO">LEVEL TWO</option>
@@ -67,7 +71,8 @@
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Freight Placed In Shipping Hub</mat-label>
-          <input matInput value="">
+          <input matInput value="" [(ngModel)]="team.teleopFreightPlacedInTeamShippingHub"
+                 [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
     </div>
@@ -76,13 +81,15 @@
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Freight Placed In Storage Unit</mat-label>
-          <input matInput value="">
+          <input matInput value="" [(ngModel)]="team.teleopFreightPlacedInStorageUnit"
+                 [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Freight Placed In Shared Shipping Hub</mat-label>
-          <input matInput value="">
+          <input matInput value="" [(ngModel)]="team.teleopFreightPlacedInSharedShippingHub"
+                 [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
     </div>
@@ -91,13 +98,14 @@
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Ducks Delivered</mat-label>
-          <input matInput value="">
+          <input matInput value="" [(ngModel)]="team.endDucksOrShippingElementDelivered"
+                 [ngModelOptions]="{standalone: true}">
         </mat-form-field>
       </div>
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="fill">
           <mat-label>End Parking Type</mat-label>
-          <select matNativeControl required>
+          <select matNativeControl required [(ngModel)]="team.endParkingType" [ngModelOptions]="{standalone: true}">
             <option value="NONE">NONE</option>
             <option value="PARKING_WareHouse_PARTIAL">WareHouse Partial</option>
             <option value="PARKING_WareHouse_COMPLETELY">WareHouse Completely</option>
@@ -107,7 +115,7 @@
     </div>
     <div class="row">
       <div class="items col-lg-6 col-md-6 col-6">
-        <mat-checkbox>Can Cap</mat-checkbox>
+        <mat-checkbox [(ngModel)]="team.endCanCap" [ngModelOptions]="{standalone: true}">Can Cap</mat-checkbox>
       </div>
     </div>
     <div class="row justify-content-center">

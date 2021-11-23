@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Team} from "../../../Team";
 
 @Component({
   selector: 'app-add-team',
@@ -6,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./add-team.component.css']
 })
 export class AddTeamComponent implements OnInit {
+  team: Team = new Team();
 
   constructor() {
   }
@@ -13,7 +15,7 @@ export class AddTeamComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public onSubmit():void {
-
+  public onSubmit(): void {
+    console.log(this.team)
   }
 }
