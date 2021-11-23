@@ -1,0 +1,65 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 ">
+        <mat-form-field appearance="standard">
+          <mat-label>Team Number</mat-label>
+          <input matInput value="">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Team Name</mat-label>
+          <input matInput value="">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 ">
+        <mat-form-field appearance="standard">
+          <mat-label>Freight Placed In Storage Unit</mat-label>
+          <input matInput value="">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Freight Placed In Shipping Element</mat-label>
+          <input matInput value="">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-sm-6 ">
+        <mat-form-field appearance="fill">
+          <mat-label>Barcode Determination</mat-label>
+          <select matNativeControl required>
+            <option value="NONE">NONE</option>
+            <option value="USING_DUCK">USING DUCK</option>
+            <option value="USING TEAM ELEMENT">USING TEAM ELEMENT</option>
+          </select>
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-sm-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Parking Type</mat-label>
+          <select matNativeControl required>
+            <option value="NONE">NONE</option>
+            <option value="PARKING_IN_STORAGE_UNIT_PARTIAL">Storage Unit Partial</option>
+            <option value="PARKING_IN_STORAGE_UNIT_COMPLETELY">Storage Unit Completely</option>
+            <option value="PARKING_WareHouse_PARTIAL">WareHouse Partial</option>
+            <option value="PARKING_WareHouse_COMPLETELY">WareHouse Completely</option>
+          </select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-sm-6 ">
+        <p>Hello</p>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-sm-6">
+        <p>Hello</p>
+      </div>
+    </div>
+  </form>
+
+</div>
