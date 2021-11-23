@@ -3,13 +3,13 @@
     <div class="row">
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
-          <mat-label>Team Number</mat-label>
-          <input matInput value="">
+          <mat-label>Team Name</mat-label>
+          <input matInput value="" [(ngModel)]="team.teamName">
         </mat-form-field>
       </div>
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
-          <mat-label>Team Name</mat-label>
+          <mat-label>Team Number</mat-label>
           <input matInput value="">
         </mat-form-field>
       </div>
@@ -99,8 +99,6 @@
           <mat-label>End Parking Type</mat-label>
           <select matNativeControl required>
             <option value="NONE">NONE</option>
-            <option value="PARKING_IN_STORAGE_UNIT_PARTIAL">Storage Unit Partial</option>
-            <option value="PARKING_IN_STORAGE_UNIT_COMPLETELY">Storage Unit Completely</option>
             <option value="PARKING_WareHouse_PARTIAL">WareHouse Partial</option>
             <option value="PARKING_WareHouse_COMPLETELY">WareHouse Completely</option>
           </select>
@@ -113,7 +111,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-        <button mat-raised-button class="bg-success">Submit</button>
+      <button type="submit" mat-raised-button class="bg-success">Submit</button>
     </div>
   </form>
 
