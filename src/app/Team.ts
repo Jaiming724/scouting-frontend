@@ -12,6 +12,7 @@ export class Team {
   endDucksOrShippingElementDelivered: number = 0;
   endCanCap: boolean = false;
   endParkingType: string = "NONE";
+  notes: string = ""
 
   constructor() {
   }
