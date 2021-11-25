@@ -2,7 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {Team} from "../../../Team";
 import {TeamService} from "../../../services/team.service";
 import {DataSource} from "@angular/cdk/collections";
-import {Observable} from "rxjs";
+import {Observable, Subscription} from "rxjs";
+import {MatDialog} from "@angular/material/dialog";
+import {ViewTeamDialogComponent} from "../view-team-dialog/view-team-dialog.component";
 
 
 @Component({
@@ -14,9 +16,10 @@ export class ViewTeamsComponent implements OnInit {
   displayedColumns: string[] = ['Team-Number', 'Team-Name', 'Auto-Parking-Type'];
   teams!: Team[]
   dataSource = new UserDataSource(this.teamService);
+  subscription!: Subscription;
 
-  constructor(private teamService: TeamService) {
-    teamService.getTeamList().subscribe((teams) => {
+  constructor(private teamService: TeamService, private matDialog: MatDialog) {
+    this.subscription = teamService.getTeamList().subscribe((teams) => {
       this.teams = teams;
     })
   }
@@ -24,6 +27,12 @@ export class ViewTeamsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public displayTeam(team: Team) {
+    let dialogRef = this.matDialog.open(ViewTeamDialogComponent, {data: team})
+    dialogRef.afterClosed().subscribe((str: Task) => {
+      console.log(str)
+    })
+  }
 }
 
 export class UserDataSource extends DataSource<any> {

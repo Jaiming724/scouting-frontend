@@ -14,6 +14,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatIconModule} from "@angular/material/icon";
+import {MatDialogModule} from "@angular/material/dialog";
 
 import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
 import {AddTeamComponent} from './components/nav-items/add-team/add-team.component';
@@ -22,6 +23,7 @@ import {ViewTeamsComponent} from './components/nav-items/view-teams/view-teams.c
 import {ViewMatchesComponent} from './components/nav-items/view-matches/view-matches.component';
 import {BodyComponent} from './components/body/body.component';
 import {MatTableModule} from "@angular/material/table";
+import {ViewTeamDialogComponent} from './components/nav-items/view-team-dialog/view-team-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import {MatTableModule} from "@angular/material/table";
     AddMatchComponent,
     ViewTeamsComponent,
     ViewMatchesComponent,
-    BodyComponent
+    BodyComponent,
+    ViewTeamDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,7 @@ import {MatTableModule} from "@angular/material/table";
     MatNativeDateModule,
     MatIconModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule, MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

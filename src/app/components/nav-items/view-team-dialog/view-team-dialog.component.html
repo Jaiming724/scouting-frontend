@@ -1,0 +1,49 @@
+<div class="pop-up">
+  <div>
+    <h1>{{team.teamNumber}}</h1>
+    <h3>{{'Name: ' + team.teamName}}</h3>
+    <p>*Note the number outside of the parentheses is the score and inside is the raw data</p>
+  </div>
+
+  <div class="misc">
+    <h2>Misc</h2>
+    <ul>
+      <li>Overall OPR: N/A</li>
+      <li>Autonomous OPR: N/A</li>
+      <li>Teleop OPR: N/A</li>
+      <li>Endgame OPR: N/A</li>
+      <li>{{'Robot Description: ' + team.robotDescription}}</li>
+      <li>{{'Additional Notes: ' + team.notes}}</li>
+    </ul>
+  </div>
+
+  <div class="auto">
+    <h2>Autonomous</h2>
+    <ul>
+      <li>{{'Parking Type: ' + team.autoParkingType}}</li>
+      <li>{{'Freight Placed In Storage Unit: ' + team.autoFreightPlacedInStorageUnit}}</li>
+      <li>{{'Freight Placed In Shipping Hub: ' + team.autoFreightPlacedOnShippingHub}}</li>
+      <li>{{'Barcode Determination: ' + team.barcodeDetermination}}</li>
+    </ul>
+  </div>
+  <div class="teleop">
+    <h2>Teleop</h2>
+    <ul>
+      <li>{{'Shipping Hub Placement Level: ' + team.teleopShippingHubLevel}}</li>
+      <li>{{'Freight Placed In Shipping Hub: ' + team.teleopFreightPlacedInTeamShippingHub}}</li>
+      <li>{{'Freight Placed In Storage Unit: ' + team.teleopFreightPlacedInStorageUnit}}</li>
+      <li>{{'Freight Placed In Shared Shipping Hub: ' + team.teleopFreightPlacedInSharedShippingHub}}</li>
+    </ul>
+  </div>
+
+  <div class="end">
+    <h2>End Game</h2>
+    <ul>
+      <li>{{'Ducks/Team Shipping Element: ' + team.endDucksOrShippingElementDelivered}}</li>
+      <li>{{'Can Cap: ' + team.endCanCap}}</li>
+      <li>{{'Parking Type: ' + team.autoParkingType}}</li>
+    </ul>
+  </div>
+
+
+</div>
