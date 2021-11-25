@@ -13,6 +13,7 @@ export class Team {
   endCanCap: boolean = false;
   endParkingType: string = "NONE";
   notes: string = ""
+  robotDescription: string = "CANNOT_GO_OVER_BARRIER_13_INCH"
 
   constructor() {
   }
