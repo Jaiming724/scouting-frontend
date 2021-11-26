@@ -1,1 +1,123 @@
-<p>add-match works!</p>
+<div class="container-fluid">
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Match Number</mat-label>
+          <input matInput value="" [(ngModel)]="match.matchNumber" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Field Number</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.fieldNumber" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items col-lg-3 col-3">
+        <mat-form-field appearance="standard">
+          <mat-label>Red Team 1</mat-label>
+          <input matInput value="" [(ngModel)]="match.redTeamOne" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-3 col-3">
+        <mat-form-field appearance="standard">
+          <mat-label>Red Team 2</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.redTeamTwo" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-3 col-3">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue Team 1</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.blueTeamOne" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-3 col-3">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue Team 1</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.blueTeamTwo" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Red Total Score</mat-label>
+          <input matInput value="" [(ngModel)]="match.redTotal" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue Total Score</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.blueTotal" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Red Autonomous</mat-label>
+          <input matInput value="" [(ngModel)]="match.redAuto" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue Autonomous</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.blueAuto" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Red Teleop</mat-label>
+          <input matInput value="" [(ngModel)]="match.redTeleop" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue Teleop</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.blueTeleop" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Red End Game</mat-label>
+          <input matInput value="" [(ngModel)]="match.redEnd" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue End Game</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.blueEnd" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Red Penalties</mat-label>
+          <input matInput value="" [(ngModel)]="match.redPenalty" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+      <div class="items col-lg-6 col-md-6 col-6">
+        <mat-form-field appearance="standard">
+          <mat-label>Blue Penalties</mat-label>
+          <input matInput value="" type="number" [(ngModel)]="match.bluePenalty" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <button type="submit" mat-raised-button class="bg-success">Submit</button>
+    </div>
+  </form>
+</div>
