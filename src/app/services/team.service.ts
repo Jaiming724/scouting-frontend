@@ -40,4 +40,15 @@ export class TeamService {
       this.subject.next(this.teams)
     })
   }
+
+  public getTeamNameFromNumber(num: number): string {
+    for (let i = 0; i < this.teams.length; i++) {
+      if (this.teams[i].teamNumber == num) {
+        if (this.teams[i].teamName !== undefined) {
+          return this.teams[i].teamName!;
+        }
+      }
+    }
+    return "unknown";
+  }
 }

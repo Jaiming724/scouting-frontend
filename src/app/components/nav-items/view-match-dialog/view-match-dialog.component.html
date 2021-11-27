@@ -1,0 +1,29 @@
+<div class="pop-up">
+  <div>
+    <h3>{{'Match Number: ' + match.matchNumber}}</h3>
+  </div>
+
+  <div class="red-team">
+    <h4>Red Team</h4>
+    <ul>
+      <li>Red Team 1: {{match.redTeamOne + ' ( ' + getTeamNameFromNumber(match.redTeamOne) + ' )'}}</li>
+      <li>Red Team 2: {{match.redTeamTwo + ' ( ' + getTeamNameFromNumber(match.redTeamTwo) + ' )'}}</li>
+      <li>Red Auto: {{match.redAuto}}</li>
+      <li>Red Teleop: {{match.redTeleop}}</li>
+      <li>Red End Game: {{match.redEnd}}</li>
+      <li>Red Penalty: {{match.redPenalty}}</li>
+    </ul>
+  </div>
+  <div class="blue-team">
+    <h4>Blue Team</h4>
+    <ul>
+      <li>Blue Team 1: {{match.blueTeamOne + ' ( ' + getTeamNameFromNumber(match.redTeamOne) + ' )'}}</li>
+      <li>Blue Team 2: {{match.blueTeamTwo + ' ( ' + getTeamNameFromNumber(match.redTeamTwo) + ' )'}}</li>
+      <li>Blue Auto: {{match.blueAuto}}</li>
+      <li>Blue Teleop: {{match.blueTeleop}}</li>
+      <li>Blue End Game: {{match.blueEnd}}</li>
+      <li>Blue Penalty: {{match.bluePenalty}}</li>
+    </ul>
+  </div>
+
+</div>

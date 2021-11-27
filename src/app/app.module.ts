@@ -24,6 +24,7 @@ import {ViewMatchesComponent} from './components/nav-items/view-matches/view-mat
 import {BodyComponent} from './components/body/body.component';
 import {MatTableModule} from "@angular/material/table";
 import {ViewTeamDialogComponent} from './components/nav-items/view-team-dialog/view-team-dialog.component';
+import { ViewMatchDialogComponent } from './components/nav-items/view-match-dialog/view-match-dialog.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {ViewTeamDialogComponent} from './components/nav-items/view-team-dialog/v
     ViewTeamsComponent,
     ViewMatchesComponent,
     BodyComponent,
-    ViewTeamDialogComponent
+    ViewTeamDialogComponent,
+    ViewMatchDialogComponent
   ],
   imports: [
     BrowserModule,
