@@ -14,6 +14,9 @@
         </mat-form-field>
       </div>
     </div>
+
+    <mat-divider></mat-divider>
+    <h3 class="divider">Autonomous</h3>
     <div class="row">
       <div class="items col-lg-6 col-md-6">
         <mat-form-field appearance="standard">
@@ -42,19 +45,28 @@
           </select>
         </mat-form-field>
       </div>
-      <div class="items col-lg-6 col-md-6 col-sm-6 col-6">
+      <div class="items col-lg-6 col-6">
         <mat-form-field appearance="fill">
-          <mat-label>Parking Type</mat-label>
+          <mat-label> Auto Parking Type</mat-label>
           <select matNativeControl required [(ngModel)]="team.autoParkingType" [ngModelOptions]="{standalone: true}">
             <option value="NONE">NONE</option>
             <option value="PARKING_IN_STORAGE_UNIT_PARTIAL">Storage Unit Partial</option>
             <option value="PARKING_IN_STORAGE_UNIT_COMPLETELY">Storage Unit Completely</option>
-            <option value="PARKING_WareHouse_PARTIAL">WareHouse Partial</option>
-            <option value="PARKING_WareHouse_COMPLETELY">WareHouse Completely</option>
+            <option value="PARKING_IN_WAREHOUSE_PARTIAL">WareHouse Partial</option>
+            <option value="PARKING_IN_WAREHOUSE_COMPLETELY">WareHouse Completely</option>
           </select>
         </mat-form-field>
       </div>
     </div>
+
+    <div class="row">
+      <div class="items col-12 mx-auto ">
+        <mat-checkbox [(ngModel)]="team.autoCarousel" [ngModelOptions]="{standalone: true}">Carousel</mat-checkbox>
+      </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <h3 class="divider">Teleop</h3>
     <div class="row">
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="fill">
@@ -93,8 +105,9 @@
         </mat-form-field>
       </div>
     </div>
+    <mat-divider></mat-divider>
+    <h3 class="divider">End Game</h3>
     <div class="row">
-
       <div class="items col-lg-6 col-md-6 col-6">
         <mat-form-field appearance="standard">
           <mat-label>Ducks Delivered</mat-label>
@@ -107,8 +120,8 @@
           <mat-label>End Parking Type</mat-label>
           <select matNativeControl required [(ngModel)]="team.endParkingType" [ngModelOptions]="{standalone: true}">
             <option value="NONE">NONE</option>
-            <option value="PARKING_WareHouse_PARTIAL">WareHouse Partial</option>
-            <option value="PARKING_WareHouse_COMPLETELY">WareHouse Completely</option>
+            <option value="PARKING_IN_WAREHOUSE_PARTIAL">WareHouse Partial</option>
+            <option value="PARKING_IN_WAREHOUSE_COMPLETELY">WareHouse Completely</option>
           </select>
         </mat-form-field>
       </div>

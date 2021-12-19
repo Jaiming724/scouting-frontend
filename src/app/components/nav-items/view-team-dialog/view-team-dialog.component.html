@@ -2,6 +2,7 @@
   <div>
     <h1>{{team.teamNumber}}</h1>
     <h3>{{'Name: ' + team.teamName}}</h3>
+    <h3>{{'Total Score: ' + team.total}}</h3>
     <p>*Note the number outside of the parentheses is the score and inside is the raw data</p>
   </div>
 
@@ -24,6 +25,8 @@
       <li>{{'Freight Placed In Storage Unit: ' + team.autoFreightPlacedInStorageUnit}}</li>
       <li>{{'Freight Placed In Shipping Hub: ' + team.autoFreightPlacedOnShippingHub}}</li>
       <li>{{'Barcode Determination: ' + team.barcodeDetermination}}</li>
+      <li>{{'Carousel: ' + team.autoCarousel}}</li>
+      <li>{{'Total Autonomous Score: ' + team.autoTotal}}</li>
     </ul>
   </div>
   <div class="teleop">
@@ -33,6 +36,7 @@
       <li>{{'Freight Placed In Shipping Hub: ' + team.teleopFreightPlacedInTeamShippingHub}}</li>
       <li>{{'Freight Placed In Storage Unit: ' + team.teleopFreightPlacedInStorageUnit}}</li>
       <li>{{'Freight Placed In Shared Shipping Hub: ' + team.teleopFreightPlacedInSharedShippingHub}}</li>
+      <li>{{'Total Teleop Score: ' + team.teleopTotal}}</li>
     </ul>
   </div>
 
@@ -42,6 +46,7 @@
       <li>{{'Ducks/Team Shipping Element: ' + team.endDucksOrShippingElementDelivered}}</li>
       <li>{{'Can Cap: ' + team.endCanCap}}</li>
       <li>{{'Parking Type: ' + team.autoParkingType}}</li>
+      <li>{{'Total Endgame Score: ' + team.endTotal}}</li>
     </ul>
   </div>
 

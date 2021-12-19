@@ -1,3 +1,17 @@
-mat-form-field{
+mat-form-field {
   width: 100%;
+}
+
+.divider {
+  text-align: center;
+}
+
+.autoCarousel{
+  width: 100%;
+  display: flex;
+}
+.autoCarousel mat-checkbox{
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }

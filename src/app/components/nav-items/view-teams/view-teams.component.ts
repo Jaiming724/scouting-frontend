@@ -13,7 +13,7 @@ import {ViewTeamDialogComponent} from "../view-team-dialog/view-team-dialog.comp
   styleUrls: ['./view-teams.component.css']
 })
 export class ViewTeamsComponent implements OnInit {
-  displayedColumns: string[] = ['Team-Number', 'Team-Name', 'Auto-Parking-Type'];
+  displayedColumns: string[] = ['Team-Number', 'Team-Name', 'Total'];
   teams!: Team[]
   dataSource = new UserDataSource(this.teamService);
   subscription!: Subscription;
@@ -28,6 +28,7 @@ export class ViewTeamsComponent implements OnInit {
   }
 
   public displayTeam(team: Team) {
+    console.log(team)
     let dialogRef = this.matDialog.open(ViewTeamDialogComponent, {data: team})
     dialogRef.afterClosed().subscribe((str: Task) => {
       console.log(str)

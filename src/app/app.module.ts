@@ -25,6 +25,7 @@ import {BodyComponent} from './components/body/body.component';
 import {MatTableModule} from "@angular/material/table";
 import {ViewTeamDialogComponent} from './components/nav-items/view-team-dialog/view-team-dialog.component';
 import { ViewMatchDialogComponent } from './components/nav-items/view-match-dialog/view-match-dialog.component';
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -38,23 +39,23 @@ import { ViewMatchDialogComponent } from './components/nav-items/view-match-dial
     ViewTeamDialogComponent,
     ViewMatchDialogComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    FormsModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
-    MatDatepickerModule,
-    FormsModule,
-    MatButtonModule,
-    MatInputModule,
-    MatNativeDateModule,
-    MatIconModule,
-    HttpClientModule,
-    MatTableModule, MatDialogModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        FormsModule,
+        MatCheckboxModule,
+        MatFormFieldModule,
+        MatDatepickerModule,
+        FormsModule,
+        MatButtonModule,
+        MatInputModule,
+        MatNativeDateModule,
+        MatIconModule,
+        HttpClientModule,
+        MatTableModule, MatDialogModule, MatDividerModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

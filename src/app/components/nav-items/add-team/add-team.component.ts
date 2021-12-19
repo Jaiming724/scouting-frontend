@@ -21,6 +21,11 @@ export class AddTeamComponent implements OnInit {
       alert("team name or number can not be empty");
       return;
     }
+    this.team.calculateAutoPoints()
+    this.team.calculateTeleop()
+    this.team.calculateEndgame()
+    this.team.calculateTotal()
+
     this.teamService.addTeam(this.team);
     console.log(this.team)
     this.team = new Team();
