@@ -1,24 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.cdk-global-overlay-wrapper {
-  display: block;
-  position: relative;
-  overflow: auto;
-  text-align: center;
+html, body {
+  height: 100%;
 }
 
-.cdk-global-overlay-wrapper::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  white-space: nowrap;
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cdk-global-overlay-wrapper {
+  pointer-events: auto !important;
+  overflow-y: scroll !important;
+  align-items: start !important;
+  z-index: auto !important;
+
 }
 
 .cdk-overlay-pane {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  white-space: normal;
+  margin: 1rem;
+  z-index: 1002;
 }
